@@ -1,0 +1,101 @@
+*{ /* universal selector that targets every single element*/
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    /* rule changed to (actual size= width including padding and border) makes layout easy to manage 
+    in conclusion: 
+    sets consistent starting point 
+    removes unexpected spacing 
+    makes element sizing more predictable
+    helps with clean layouts and responsiveness 
+    */
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fcebf3;
+    color: #333; 
+}
+/* HEADER STYLING INCLUDES NAVIGATION ELEMENT (top of the page) */
+.header{
+    display:flex; /* responsive layout  */
+    justify-content: space-between;
+    /* equal space between items */
+    align-items: center;
+    padding: 1rem 2rem; 
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.nav a{
+    margin-left: 1rem; 
+    /* buffer zone: can use top, right, bottom, left*/
+    text-decoration: none;
+    color: #ff8cba; 
+    font-weight: bold;
+}
+
+.hero{
+    text-align: center;
+    padding: 4rem 2rem; 
+
+}
+
+.cta{
+    background-color: #ff8cba;
+    color: white; 
+    padding: 0.75rem 1.5rem; 
+    border: none; 
+    border-radius: 8px; 
+    margin-top: 1rem;
+    cursor: point; 
+    transition: background 0.3s ease; 
+}
+
+.cta:hover{
+    background-color: #d66ca3;
+}
+
+.features{
+    display:flex; 
+    justify-content: space-around;
+    /* equal space around items */
+    gap: 1rem; 
+    padding: 2rem; 
+    flex-wrap: wrap; 
+    /* items move to next row when there's no space
+    flex-wrap: nowrap; default (items stay on one line even with overflow */
+}
+
+.feature-card{
+    background-color: white;
+    padding: 1.5rem; 
+    border-radius: 12px;
+    width: 30%; 
+    min-width: 250px;
+    text-align: center; 
+    box-shadow: 0,4px 12px rgba(0,0,0,0.1);
+
+}
+
+.footer{
+    text-align: center;
+    padding: 1rem; 
+    background-color: #fff;
+    margin-top: 2rem; 
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 768px){
+    /* responsive styles based on the viewpoint size (screen width) 
+    max-width: 768 means the styles only apply when the screen is 768 pizels wide or smaller (tablets and mobile devices)*/
+    .features{
+        flex-direction: column;
+        /* stacks children vertically instead of side by side*/
+        align-items: center;
+    }
+    .feature-card{
+        width: 90%; 
+        margin-bottom: 1rem; 
+    }
+}
