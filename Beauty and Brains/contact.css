@@ -1,0 +1,76 @@
+body {
+    margin: 2rem;
+    padding: 2rem;
+    color: #333; 
+    background-color: #fcebf3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex; 
+}
+
+.card-form {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem; 
+    max-width: 1200px;  /* stretches box size */
+    margin: 0 auto;  /* centers the form within the section */
+    box-sizing: border-box;
+}
+
+.cta {
+    background-image: url(mailingphoto.webp);
+    padding: 2rem; 
+    text-align: center; 
+    color: #333; 
+}
+
+.info {
+    text-align: center;
+    padding-top: 1rem;
+    margin: 1rem 2rem; 
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto; 
+    padding: 2rem; 
+    width: 75%
+}
+
+label {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color:#333;
+}
+
+input, textarea {
+    width: 100%; 
+    padding: 0.75rem; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; 
+
+}
+
+.btn {
+    display:inline-block;
+    text-decoration: none;
+    background-color: #ff8cba; 
+    color: white;
+    padding: 0.75rem 1.5rem; 
+    border: none; 
+    margin-top: 1rem; 
+    cursor: point; 
+    transition: background 0.3s ease; 
+}
+
+.btn:hover {
+    background-color: #d66ca3;
+}
